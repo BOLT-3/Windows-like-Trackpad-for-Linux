@@ -14,6 +14,8 @@ A python scripts that brings Windows style trackpad gesture in linux.
 
 ---
 
+## How to save it in autostart
+
 Save **Main.py** then make it into a executable using (from where the file is located)
 ```
 chmod +x Main.py
