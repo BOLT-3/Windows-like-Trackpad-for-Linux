@@ -1,8 +1,10 @@
 # Windows-like-Trackpad-for-Linux
 
-A python scripts that brings Windows style trackpad gesture in linux.
+A Python script that brings Windows-style multi-finger trackpad gestures to Linux.
 
 ---
+
+## Features
 
 - Swipe 3 fingers horizontally to scroll between different windows
 - Swipe 3 fingers down to show desktop
@@ -14,7 +16,7 @@ A python scripts that brings Windows style trackpad gesture in linux.
 
 ---
 
-## How to save it in autostart
+## How to set it up
 
 Save **Main.py** then make it into a executable using (from where the file is located)
 ```
