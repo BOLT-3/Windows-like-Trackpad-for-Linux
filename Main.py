@@ -8,11 +8,11 @@ class GestureHandler:
         self.last_x = 0
         self.last_y = 0
         self.gesture_active = False
-        self.min_delta = 40  # Decrease threshold for more overall sensitivity
+        self.min_delta = 35  # Decrease threshold for more overall sensitivity
         self.gesture_type = None
         self.action_triggered = False
         self.direction_determined = False
-        self.horizontal_threshold_extra = 10  # Decrease horizontal threshold for more horizontal sensitivity (extra)
+        self.horizontal_threshold_extra = 15  # Decrease horizontal threshold for more horizontal sensitivity (extra)
 
     def press_alt(self):
         if not self.alt_pressed:
@@ -190,6 +190,9 @@ def parse_libinput_events():
             bufsize=1
         )
     except FileNotFoundError:
+        return
+    
+    if process.stdout is None:
         return
     
     for line in process.stdout:
